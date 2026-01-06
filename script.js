@@ -1,16 +1,5 @@
 
-// 🔐 ПАРОЛЬ
-function checkPassword() {
-  const pass = document.getElementById("password").value;
-  const correct = "125512"; // 🔴 можешь поменять пароль
-
-  if (pass === correct) {
-    localStorage.setItem("access", "yes");
-    window.location.href = "home.html";
-  } else {
-    document.getElementById("error").innerText = "Думай роднусь";
-  }
-}
+//
 
 // ⛔ защита страниц
 if (window.location.pathname.includes("home")) {
@@ -124,4 +113,5 @@ window.addEventListener("click", (e) => {
     if(e.target === modal) modal.style.display = "none";
   });
 });
+
 
